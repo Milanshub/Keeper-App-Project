@@ -1,13 +1,11 @@
-
-
-function Footer(){
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
-
-return (
-<footer>
-<p> Copyright © {currentYear}.</p>
-</footer>)
-}
-
-export default Footer; 
+function Footer() {
+    const year = new Date().getFullYear();
+    return (
+      <footer>
+        <p>Copyright ⓒ {year}</p>
+      </footer>
+    );
+  }
+  
+  export default Footer;
+  
