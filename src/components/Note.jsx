@@ -1,3 +1,6 @@
+import DeleteIcon from '@mui/icons-material/Delete';
+// delete icon button has bveen added from react 
+
 function Note(props) {
   function handleClick(){
     props.onDelete(props.id)
@@ -7,7 +10,7 @@ function Note(props) {
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleClick}>DELETE</button>
+      <button onClick={handleClick}> <DeleteIcon /> </button>
     </div>
   );
 }
